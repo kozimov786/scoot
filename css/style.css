@@ -100,7 +100,7 @@ body{
 }
 
 .btn{
-   transition: color ease 0.3s;
+   transition: ease 0.3s;
    padding: 10px 35px;
    background-color: var(--accent-color);
    color: #fff;
