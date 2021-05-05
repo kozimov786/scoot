@@ -420,6 +420,10 @@ body{
     color: var(--text-color);
     text-decoration: none;
     margin-right: 32px;
+    transition: color ease 0.3s;
+}
+.footer-link:hover{
+    color: var(--accent-color);
 }
 .social-wrapper{
     display: flex;
@@ -428,4 +432,7 @@ body{
 .social-link img{
     display: block;
     margin-left: 24px;
+}
+.social-link img:hover{
+    opacity: 0.8;
 }
