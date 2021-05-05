@@ -129,7 +129,7 @@ body{
 /* SITE_MAIN */
 .hero-section{
     padding: 153px 0;
-    background-image:linear-gradient( rgba(74, 86, 104,0.8),rgba(74, 86, 104,0.9)),
+    background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
                      url("../images/site-hero-bg-scoot.png");
 
     background-repeat: no-repeat;
@@ -206,9 +206,23 @@ body{
 }
 
 /* ORDER */
+.order{
+    margin-bottom: 200px;
+}
 .order__container{
     display: flex;
     align-items: center;
+    position: relative;
+}
+.order__container::before{
+    content: "";
+    background-color:var(--light-grey);
+    width: 974px;
+    height: 15px;
+    position: absolute;
+    top: 15%;
+    left: -15%;
+    z-index: -1;
 }
 .order-info{
     width: 350px;
@@ -249,4 +263,95 @@ body{
 }
 .order-info__text{
     margin: 0;
+}
+
+/* SERVICES */
+
+.service{
+    width: 445px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 160px;
+}
+.service-info__title{
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: var(--mono-font);
+    color: var(--title-color);
+    letter-spacing: -2.14286px;
+    position: relative;
+}
+.service-info__text{
+    margin: 0;
+    margin-bottom: 40px;
+}
+.service-info__btn{
+    display: inline-block;
+    text-decoration: none;
+}
+.service-info__title::after{
+    content: "";
+    width: 1080px;
+    height: 445px;
+    display: block;
+    position: absolute;
+    left: 135%;
+    top: -70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: -1;
+}
+.service-info__title::before{
+    content: "";
+    width: 735px;
+    height: 138px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.easy-title::before{
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    position: absolute;
+    left: 125%;
+    top: 220px;
+    z-index: 1;
+}
+
+.easy-title::after{
+    background-image: url("../images/easu-to-use-riding-telemetry.png");
+}
+.coming-title::before{
+    background-image: url("../images/yellow-arrow-to-right.svg");
+    position: absolute;
+    left: -250%;
+    top: -70px;
+    z-index: 1;
+}
+
+.coming-title::after{
+    background-image: url("../images/coming-to-a-city-near-you.png");
+    position: absolute;
+    left: -280%;
+    top: -70px;
+}
+.payment-title::before{
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    position: absolute;
+    left: 125%;
+    top: 220px;
+    z-index: 1;
+}
+
+.payment-title::after{
+    background-image: url("../images/zero-hassle-payments.png");
+   
+}
+.coming-info{
+    margin-left: auto;
 }
