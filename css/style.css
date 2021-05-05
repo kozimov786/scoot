@@ -8,8 +8,9 @@
     --snow:#f2f5f9;
     --light-yellow:#fff4df;
 
-    /*Site Fonts*/
-    --mono-fonts:"Space Mono","Arial",sans-serif;
+    /* FONTS */
+    --mono-font:"Space Mono","Arial",sans-serif;
+
 }
 
 /*WEB FONTS RELATED*/
@@ -135,14 +136,14 @@ body{
     background-position: center center,
                          calc(50% + 300px) 85%;
    
-
+  margin-bottom: 160px;
 }
 .hero-title{
     width: 500px;
     margin: 0;
     margin-bottom: 40px;
     color: #fff;
-    font-family:"Space Mono","Arial",sans-serif !important;
+    font-family:var(--mono-font);
     font-weight: bold;
     font-size: 56px;
     line-height: 56px;
@@ -202,4 +203,50 @@ body{
 }
 .hero-btn:hover{
     background-color: transparent;
+}
+
+/* ORDER */
+.order__container{
+    display: flex;
+    align-items: center;
+}
+.order-info{
+    width: 350px;
+    margin-right: 30px;
+}
+.order-info::before{
+    content: "";
+    display: block;
+    width: 96px;
+    height: 96px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.order-info__locate::before{
+    background-image: url("../images/locate-with-app.svg");
+    background-size:38px 47px, contain;
+}
+.order-info__pick::before{
+    background-image: url("../images/pick-your-scooter.svg");
+    background-size:38px 47px, contain;
+}
+.order-info__enjoy::before{
+    background-image: url("../images/pick-your-scooter2.svg");
+    background-size:38px 47px, contain;
+}
+.order-info__title{
+    font-weight: bold;
+    font-family:var(--mono-font);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color:var(--title-color);
+    margin: 0;
+    margin-bottom: 27px;
+}
+.order-info__text{
+    margin: 0;
 }
