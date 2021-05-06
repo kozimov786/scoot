@@ -3,7 +3,15 @@
     padding-bottom: 160px;
     font-family: var(--lexend-deca);
 }
-
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 /* ABOUT */
 
 .about-info{
@@ -252,6 +260,7 @@
     display: block;
     margin-top: 24px;
 }
+
 .work-item:not(:last-child){
     margin-bottom: 16px;
 }
