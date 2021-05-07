@@ -202,6 +202,8 @@ body{
 }
 .social-link img{
     display: block;
+}
+.social-link{
     margin-left: 24px;
 }
 .social-link img:hover{
