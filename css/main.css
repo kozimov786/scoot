@@ -205,5 +205,5 @@ body{
     margin-left: 24px;
 }
 .social-link img:hover{
-    opacity: 0.8;
+    filter: grayscale(90%);
 }
