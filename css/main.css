@@ -90,6 +90,7 @@ body{
 }
 .sitenav-item{
     font-weight: bold;
+    font-family: var(--mono-font);
 }
 .sitenav-link{
     color: var(--text-color);
