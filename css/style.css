@@ -69,7 +69,15 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 /* SITE_HEADER */
 .site-header{
     padding: 21px 0;
@@ -212,15 +220,7 @@ body{
     padding-bottom: 160px;
     font-family: var(--lexend-deca);
 }
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
+
 /* ABOUT */
 
 .about-info{
