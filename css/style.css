@@ -99,11 +99,11 @@ body{
 .sitenav-item{
     font-weight: bold;
     font-family: var(--mono-font);
+    margin-right: 32px;
 }
 .sitenav-link{
     color: var(--text-color);
     text-decoration: none;
-    margin-right: 32px;
     transition: color ease 0.3s;
 }
 .sitenav-link:hover{
@@ -980,16 +980,15 @@ body{
 .hamburber{
     display: none;
 }
-
 .line::after{
     content: "";
-    display: block;
+    display: none;
     width: 20px;
-    background-color: var(--accent-color);
-    height: 4px;
     margin-bottom: 2px;
-    position: relative;
+    height: 4px;
+    background-color: var(--accent-color);
 }
+
 
 
 
@@ -1078,6 +1077,9 @@ body{
 /* RESPONSIVE */
 
 @media only screen and (max-width:768px) {
+    .site-main{
+        overflow-x: hidden;
+    }
     .sitenav{
         margin-right: 94px;
     }
@@ -1165,6 +1167,9 @@ body{
 }
 /* MOBILE_RESPONSIVE */
 @media only screen and (max-width:375px) {
+    .site-main{
+        overflow-x: hidden;
+    }
     .sitenav{
         display: none;
     }
@@ -1175,7 +1180,7 @@ body{
         margin-right: auto;
         margin-left: auto;
     }
-    .hamburber{
+    .line::after{
         display: block;
         top: 0;
         left: 0;
@@ -1220,5 +1225,70 @@ body{
     }
     .order-info__text{
         width: 311px;
+    }
+
+    /* SERVICE_INFO */
+    .service{
+        margin-top: 500px;
+        width: 311px;
+        text-align: center;
+    }
+    .service-info__title::after{
+        width: 650px;
+        height: 650px;
+        left: 0;
+    }
+    .service-info__title::before{
+        left: -30px;
+    }
+    .service-info__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .coming-title::after{
+        left: -340px;
+    }
+    .coming-title::before{
+        left: -450px;
+        top: -300px;
+    }
+    /* FOOTER_TOP */
+    .sign-up{
+        width: 311px;
+    }
+    .sign-up__title{
+        width: 311px;
+        font-size: 32px;
+    }
+    .site-footer__top{
+        background-size: cover;
+        background-position: -500px 140px;
+    }
+    .site-footer__bottom{
+        padding-top: 64px;
+        padding-bottom: 88px;
+    }
+    .footer-bottom__container{
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer-bottom__container img{
+        margin-bottom: 41px;
+    }
+    .footer-list{
+        flex-direction: column;
+        width: 74px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 85px;
+    }
+    .footer-link{
+        margin: 0;
+    }
+    .footer-item:not(:last-child){
+        margin-bottom: 16px;
+    }
+    .social-wrapper img{
+        margin: 0;
     }
 }
