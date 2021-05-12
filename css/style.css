@@ -1144,9 +1144,86 @@ body{
         letter-spacing: -0.803571px;
     }
 
+    /* CAREERS_PAGE_STYLES */
 
+    .jobs-item{
+        flex-direction: column;
+        padding: 32px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    .jobs-item__info{
+        margin-bottom: 16px;
+    }
+    .jobs-btn{
+        width: 100%;
+    }
+    .jobs-item__title{
+        font-size: 18px;
+        line-height: 24px;
+    }
+ 
 
+    /* LOCATION__PAGE__STYLES */
+    
+    .map-img{
+        width: 325px;
+        height: 152px;
+        margin-right: 0 !important;
+        margin-bottom: 50px !important;
+    }
+    .map-list{
+        flex-direction: column !important;
 
+    }
+    .map-item{
+        background-color: var(--light-yellow);
+        position: relative;
+        margin-bottom: 16px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .map-item::after{
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+    }
+   .map-item__jakarta::after{
+       top: -430px;
+       left: 70px;
+   }
+   .map-item__yokohama::after{
+        top: -300px;
+        left: 250px;
+    }
+    .map-item__london::after{
+        top: -270px;
+        left: 150px;
+    }
+    .map-item__new-york::after{
+        top: -150px;
+        left: 250px;
+    }
+    
+    .listed__container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .listed-title{
+        width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 32px !important;
+    }
+    .listed-text{
+        width: 311px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 32px !important;
+    }
 }
 
 
