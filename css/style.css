@@ -347,7 +347,6 @@ body{
     background-repeat: no-repeat;
 }
 
-
 /* FAQS__SECTION */
 
 .faqs-section__title{
@@ -437,9 +436,6 @@ body{
     display: flex;
     align-items: start;
 }
-
-
-
 
 
 
@@ -718,17 +714,50 @@ body{
 .coming-info{
     margin-left: auto;
 }
-.hamburber{
+/* BURGER_STYLES */
+.burger-btn{
+    position: absolute;
+    left: 15px;
+    margin: auto;
+    width:20px;
+    height: 20px;
+    background: linear-gradient(to right, rgba(252, 183, 43, 1) 0%, rgba(252, 183, 43, 1) 100%);
+    background-size: 50px 4px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 0.2s background;
+    border: none;
+    font-size: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
     display: none;
-}
-.line::after{
+    /* When open */
+  }
+  .burger-btn:before, .burger-btn:after {
     content: "";
-    display: none;
+    position: absolute;
+    top: 15px;
+    left: 0;
     width: 20px;
-    margin-bottom: 2px;
     height: 4px;
-    background-color: var(--accent-color);
-}
+    background:#FCB72B;
+    transition: 0.2s transform;
+    transform-origin: 25px 3px;
+  }
+  .burger-btn:after {
+    top:0;
+    transform-origin: 18px -3px;
+  }
+  .burger-btn.is-open {
+    background-size: 0px 2px;
+  }
+  .burger-btn.is-open:before {
+    transform: rotate(45deg);
+  }
+  .burger-btn.is-open:after {
+    transform: rotate(-45deg);
+  }
 
 /* FOOTER */
 
@@ -810,7 +839,9 @@ body{
 .social-link img:hover{
     filter: grayscale(90%);
 }
-
+.none{
+    overflow-y: hidden;
+}
 
 /* RESPONSIVE */
 
@@ -902,6 +933,8 @@ body{
         margin-bottom: 40px;
     }
 
+
+
 }
 /* MOBILE_RESPONSIVE */
 @media only screen and (max-width:375px) {
@@ -909,19 +942,45 @@ body{
         overflow-x: hidden;
     }
     .sitenav{
-        display: none;
+        transform: translateX(-300px);
+        display: block;
+        width: 60vw;
+        height: 100vh;
+        background-color: var(--title-color);
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        padding: 62px 32px;
+        z-index: 99;
+    }
+    .sitenav-link{
+        color: #fff;
+    }
+    .sitenav-item:not(:last-child){
+        margin-bottom: 24px;
+    }
+    .sitenav-list{
+        flex-direction: column;
+
     }
     .header-btn{
-        display: none;
+        position: absolute;
+        transform: translateX(-300px);
+        top: 600px;
+        left: 32px;
+        z-index: 99;
+        
+    }
+    .active{
+        transform: translateX(0px);
     }
     .logo-link{
         margin-right: auto;
         margin-left: auto;
     }
-    .hamburber{
+    .burger-btn{
         display: block;
-        top: 0;
-        left: 0;
     }
     /* HERO_SECTION */
      .hero-section{
@@ -970,6 +1029,7 @@ body{
         margin-top: 500px;
         width: 311px;
         text-align: center;
+        margin-bottom: 120px;
     }
     .service-info__title::after{
         width: 650px;
@@ -990,6 +1050,7 @@ body{
         left: -450px;
         top: -300px;
     }
+
     /* FOOTER_TOP */
     .sign-up{
         width: 311px;
@@ -1029,4 +1090,65 @@ body{
     .social-wrapper img{
         margin: 0;
     }
+    
+  /* ABOUT_PAGE_CSS */
+  
+    .about-info{
+       background-size: cover;
+       text-align: center;
+    }
+    .values{
+        width: 311px;
+       margin-left: auto;
+        margin-right: auto;
+    }
+    .values__container{
+        flex-direction: column;
+    }
+    .values__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .value-list{
+         margin:0 !important;
+    }
+
+    /* FAQS_SECTION */
+    .faqs-section{
+        width: 361px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .faqs-section__title{
+        margin-bottom: 48px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .how-it-works__title{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 32px !important;
+        margin-left: 20px !important;
+    }
+    .how-it-works{
+        flex-direction: column;
+    }
+    
+   .work-item{
+       width: 311px;
+       padding: 32px;
+   }
+    .work-item__title{
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.803571px;
+    }
+
+
+
+
 }
+
+
+
+
