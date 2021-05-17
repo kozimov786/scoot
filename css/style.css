@@ -932,9 +932,66 @@ body{
     .sign-up__title{
         margin-bottom: 40px;
     }
+ 
 
+    /* ABOUT_PAGE */
+    
+    .about-info{
+        background-size: cover;
+    }
+    .about-title::after{
+        left: 600px;
+    }
+    .values__container{
+        flex-direction: column;
+    }
+    .how-it-works{
+        flex-direction: column;
+    }
+    .how-it-works__title{
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 32px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-
+    /* LOCATION-PAGE */
+    .map-img{
+        width: 100%;
+        height: auto;
+    }
+    .map-item__london{
+        left: 280px;
+        top: -400px;
+    }
+    .map-item__new-york{
+      top: -350px;
+      left: 70px;
+    }
+    .map-item__yokohama{
+        top: -350px;
+        right: 30px;
+    }
+    .map-item__jakarta{
+        top: -250px;
+        right: 100px;
+    }
+    .listed__container{
+        flex-direction: column;
+        text-align: center !important;
+    }
+    .listed-title{
+        width: 457px;
+        margin-right: 0 !important;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+    }
+    .listed-text{
+        width: 573px;
+        margin-right: 0 !important;
+        margin-bottom: 40px;
+    }
 }
 /* MOBILE_RESPONSIVE */
 @media only screen and (max-width:375px) {
