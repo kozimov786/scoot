@@ -1132,7 +1132,7 @@ body{
 }
 
 /* MOBILE_RESPONSIVE */
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:475px) {
     .site-main{
         overflow-x: hidden;
     }
