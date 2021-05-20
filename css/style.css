@@ -169,7 +169,7 @@ body{
     height: 63px;
     display: block;
     position: absolute;
-    top: 230px;
+    top: 280px;
     right: -800px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -229,7 +229,7 @@ body{
     padding: 72px 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
                       url("../images/about-bg.png");
     margin-bottom: 120px;
@@ -844,7 +844,139 @@ body{
 }
 
 /* RESPONSIVE */
-
+@media only screen and (max-width:1100px){
+    .hero-title::after{
+        right: -600px;
+        top: 270px;
+        
+    }
+    .hero-info::after{
+        width: 300px;
+    }
+    .order__container::before{
+        width: 900px;
+    }
+    .values__container{
+        flex-wrap: wrap;
+    }
+    .map-img{
+        width: 1000px;
+    }
+    .about-title::after{
+        left: 850px;
+    }
+}
+@media only screen and (max-width:995px){
+    .order__container::before{
+        width: 810px;
+    }
+    .easy-title::after{
+        left: 115%;
+    }
+    .payment-title::after{
+        left: 115%;
+    }
+    .coming-title::after{
+        left: -260%;
+    }
+    .map-img{
+        width: 910px;
+    }
+    .about-title::after{
+        left: 750px;
+    }
+   
+}
+@media only screen and (max-width:900px){
+    .hero-title::after{
+        right: -500px;
+        top: 270px;
+        
+    }
+    .hero-info::after{
+        width: 250px;
+        left: 400px;
+    }
+    .hero-info::before{
+        display: none;
+    }
+    .order__container::before{
+        width: 750px;
+    }
+    .coming-title::after{
+        left: -240%;
+    }
+    .map-img{
+        width: 850px;
+    }
+    .map-item__london{
+        left: 280px;
+        top: -500px;
+    }
+    .map-item__new-york{
+      top: -450px;
+      left: 70px;
+    }
+    .map-item__yokohama{
+        top: -450px;
+        right: 30px;
+    }
+    .map-item__jakarta{
+        top: -350px;
+        right: 100px;
+    }
+    .listed__container{
+        flex-direction: column;
+        text-align: center !important;
+    }
+    .listed-title{
+        width: 457px;
+        margin-right: 0 !important;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+    }
+    .listed-text{
+        width: 573px;
+        margin-right: 0 !important;
+        margin-bottom: 40px;
+    }
+    .about-title::after{
+        left: 680px;
+    }
+}
+@media only screen and (max-width:810px){
+    .order__container::before{
+        width: 700px;
+    }
+    .easy-title::after{
+        left: 95%;
+    }
+    .payment-title::after{
+        left: 95%;
+    }
+    .coming-title::after{
+        left: -230%;
+    }
+    .how-it-works{
+        flex-direction: column;
+    }
+    .how-it-works__title{
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 32px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .values__container{
+        flex-direction: column;
+    }
+    .value-list:not(:last-child){
+        margin-right: 0;
+    }
+    .about-title::after{
+        left: 600px;
+    }
+}
 @media only screen and (max-width:768px) {
     .site-main{
         overflow-x: hidden;
@@ -993,6 +1125,12 @@ body{
         margin-bottom: 40px;
     }
 }
+@media only screen and (max-width:605px){
+    .jobs-btn{
+        padding:5px 15px;
+    }
+}
+
 /* MOBILE_RESPONSIVE */
 @media only screen and (max-width:375px) {
     .site-main{
